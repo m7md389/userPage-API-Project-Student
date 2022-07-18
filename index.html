@@ -39,11 +39,11 @@
 
     <script id="random-user" type="text/x-handlebars-template">
         {{#with user}}
-            <img id="profile-pic" src={{picture.large}}>
-            <div class="user-info">
-                <p>{{name.title}} {{name.first}} {{name.last}}</p>
-                <p>{{location.city}}, {{location.state}}</p>
-            </div>
+        <img id="profile-pic" src={{picture.large}}>
+        <div class="user-info">
+            <p>{{name.title}} {{name.first}} {{name.last}}</p>
+            <p>{{location.city}}, {{location.state}}</p>
+        </div>
         {{/with}}
     </script>
 
@@ -69,15 +69,11 @@
 
     <script id="random-friends" type="text/x-handlebars-template">
         <ul>
-        {{#each friends}}
+            {{#each friends}}
             <li>{{name.first}} {{name.last}}</li>
-        {{/each}}
+            {{/each}}
         </ul>
     </script>
-
-
-
-
 
     <script src="APIManager.js"></script>
     <script src="Renderer.js"></script>
